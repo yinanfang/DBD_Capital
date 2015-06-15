@@ -6,6 +6,9 @@ https://stackedit.io/editor
 
 ### Use this as a main repo. Add submodule for the node and iOS parts??
 
+### gitignore
+Add "// .gitignore node_modules/*" and add setup command such as "npm install -g gulp bower && npm install && bower install" in "https://github.com/PolymerElements/polymer-starter-kit"
+
 ###Follow 10 key points: https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make
 ###Features:
 1. Use development tools that automatesrestarts and browser refresh
