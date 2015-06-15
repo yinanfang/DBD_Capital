@@ -4,6 +4,9 @@ Capital Management
 ### Uses markdown editor here
 https://stackedit.io/editor
 
+### Folder structure follow "polymer-starter-kit". 
+  * Same from Yeoman maybe. Add .htaccess at the root level "app": https://www.youtube.com/watch?v=gKiaLSJW5xI
+
 ### Use this as a main repo. Add submodule for the node and iOS parts??
 
 ### gitignore
@@ -30,6 +33,9 @@ Add "// .gitignore node_modules/*" and add setup command such as "npm install -g
 
 ### Debug
 node-inspector
+
+### Front-end
+  * Bootstrap, AngularJS, Modernizr
 
 
 
