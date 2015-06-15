@@ -9,7 +9,7 @@ Capital Management
 3. Use promises ??
 4. Strong in modularity
 5. Advance logging
-- with Bunyan: https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/
+  *With Bunyan: https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/
 6. Test coverage ??
 7. Utilyze static analysis tools
 8. Monitor and profile for production
