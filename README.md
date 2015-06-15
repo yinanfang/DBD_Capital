@@ -1,6 +1,9 @@
 # DBD_Capital
 Capital Management
 
+### Uses markdown editor here
+https://stackedit.io/editor
+
 
 ###Follow 10 key points: https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make
 ###Features:
