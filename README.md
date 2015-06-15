@@ -15,6 +15,7 @@ https://stackedit.io/editor
   * With Bunyan: https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/
 6. Test coverage ??
 7. Utilyze static analysis tools
+  * ESLint
 8. Monitor and profile for production
 9. Advanced debuging with https://github.com/visionmedia/debug
 
