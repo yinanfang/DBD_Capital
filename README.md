@@ -1,9 +1,7 @@
 # DBD_Capital
-Capital Management
-
+Short description here.
 ### Uses markdown editor here
 https://stackedit.io/editor
-
 ### Folder structure follow "polymer-starter-kit". 
   * Same from Yeoman maybe. Add .htaccess at the root level "app": https://www.youtube.com/watch?v=gKiaLSJW5xI
 
