@@ -1,5 +1,14 @@
 # DBD_Capital
 Short description here.
+
+Quick Installation
+
+    git clone https://github.com/yinanfang/GoldenCompass; cd GoldenCompass
+    cd node; npm install -g gulp bower && npm install && bower install; cd ..
+    cd iOS; cocoapod install; cd ..
+
+After
+
 ### Github badges https://github.com/badges/shields
 
 ### Uses markdown editor here
@@ -38,13 +47,6 @@ node-inspector
   * Bootstrap, AngularJS, Modernizr
 
 
-Installation
-
-    git clone https://github.com/yinanfang/GoldenCompass; cd GoldenCompass
-    cd node; npm install -g gulp bower && npm install && bower install; cd ..
-    cd iOS; cocoapod install; cd ..
-
-After
 
 
 
