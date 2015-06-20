@@ -1,5 +1,7 @@
 # DBD_Capital
 Short description here.
+### Github badges https://github.com/badges/shields
+
 ### Uses markdown editor here
 https://stackedit.io/editor
 ### Folder structure follow "polymer-starter-kit". 
