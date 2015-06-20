@@ -4,7 +4,7 @@ Short description here.
 
 ### Uses markdown editor here
 https://stackedit.io/editor
-### Folder structure follow "polymer-starter-kit". 
+### Folder structure follow "polymer-starter-kit".
   * Same from Yeoman maybe. Add .htaccess at the root level "app": https://www.youtube.com/watch?v=gKiaLSJW5xI
 
 ### Use this as a main repo. Add submodule for the node and iOS parts??
@@ -37,6 +37,14 @@ node-inspector
 ### Front-end
   * Bootstrap, AngularJS, Modernizr
 
+
+Installation
+
+    git clone https://github.com/yinanfang/GoldenCompass; cd GoldenCompass
+    cd node; npm install -g gulp bower && npm install && bower install; cd ..
+    cd iOS; cocoapod install; cd ..
+
+After
 
 
 
