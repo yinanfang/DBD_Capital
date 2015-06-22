@@ -17,8 +17,22 @@ iOS
 Multi-queue and multi-thread
 third-party libraries
     blah blah blah
-Dependencies
-bolts
+Dependencies Injection with NSNotification+Factory Methods
+  Store info in info.plist. Create a reader and writer
+  No framework because Typhoon is in Objective-C and I'm about to move to Swift
+  Pass in all needed state from constructor
+  This is called Dependency Injection, by the way; you don't need to use Spring or any special IoC container, just so long as your general class design accepts its dependencies from the caller instead of instantiating them on its own or referencing global state.
+Bolts-iOS
+Core-Data?
+GCAppKit
+  GCAppAPI
+  GCUtility
+  GCNetworking
+  GCBundle
+  GCLogDump
+  GCPList
+    http://stackoverflow.com/questions/21119922/how-to-read-a-plist-and-create-different-arrays-from-its-content-in-xcode
+    https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/ReadWritePlistData/ReadWritePlistData.html
 
 node
 1. Use development tools that automatesrestarts and browser refresh
@@ -36,8 +50,8 @@ node
 9. Advanced debuging with https://github.com/visionmedia/debug
 10. Statistics
   * https://github.com/etsy/statsd   ??
-  * 
-  
+Dependencies:
+node-mysql
 
 
 ### Github badges https://github.com/badges/shields
