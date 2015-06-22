@@ -7,23 +7,35 @@ Quick Installation
     cd node; npm install -g gulp bower && npm install && bower install; cd ..
     cd iOS; cocoapod install; cd ..
 
-After
+Detailed setup workflow:
+iOS
 
-### Github badges https://github.com/badges/shields
+node
 
-### Uses markdown editor here
-https://stackedit.io/editor
-### Folder structure follow "polymer-starter-kit".
-  * Same from Yeoman maybe. Add .htaccess at the root level "app": https://www.youtube.com/watch?v=gKiaLSJW5xI
+## Features:
+iOS
+Multi-queue and multi-thread
+third-party libraries
+    blah blah blah
+Dependencies Injection with NSNotification+Factory Methods
+  Store info in info.plist. Create a reader and writer
+  No framework because Typhoon is in Objective-C and I'm about to move to Swift
+  Pass in all needed state from constructor
+  This is called Dependency Injection, by the way; you don't need to use Spring or any special IoC container, just so long as your general class design accepts its dependencies from the caller instead of instantiating them on its own or referencing global state.
+Bolts-iOS
+Core-Data?
+GCAppKit
+  GCAppAPI
+  GCUtility
+  GCNetworking
+  GCBundle
+  GCLogDump
+  GCPList
+    http://stackoverflow.com/questions/21119922/how-to-read-a-plist-and-create-different-arrays-from-its-content-in-xcode
+    https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/ReadWritePlistData/ReadWritePlistData.html
 
-### Use this as a main repo. Add submodule for the node and iOS parts??
 
-### gitignore
-Add "// .gitignore node_modules/*" and add setup command such as "npm install -g gulp bower && npm install && bower install" in "https://github.com/PolymerElements/polymer-starter-kit"
-
-### Follow 10 key points: https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make
-### This too: https://medium.com/@faisalabid/7-tips-for-a-node-js-padawan-e7c0b0e5ce3c
-###Features:
+node
 1. Use development tools that automatesrestarts and browser refresh
   * nodemon for dev and pm2 for production
 2. Non-blocking event loop
@@ -39,6 +51,26 @@ Add "// .gitignore node_modules/*" and add setup command such as "npm install -g
 9. Advanced debuging with https://github.com/visionmedia/debug
 10. Statistics
   * https://github.com/etsy/statsd   ??
+  *
+Dependencies:
+node-mysql
+
+
+### Github badges https://github.com/badges/shields
+
+### Uses markdown editor here
+https://stackedit.io/editor
+### Folder structure follow "polymer-starter-kit".
+  * Same from Yeoman maybe. Add .htaccess at the root level "app": https://www.youtube.com/watch?v=gKiaLSJW5xI
+
+### Use this as a main repo. Add submodule for the node and iOS parts??
+
+### gitignore
+Add "// .gitignore node_modules/*" and add setup command such as "npm install -g gulp bower && npm install && bower install" in "https://github.com/PolymerElements/polymer-starter-kit"
+
+### Follow 10 key points: https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make
+### This too: https://medium.com/@faisalabid/7-tips-for-a-node-js-padawan-e7c0b0e5ce3c
+
 
 ### Debug
 node-inspector
