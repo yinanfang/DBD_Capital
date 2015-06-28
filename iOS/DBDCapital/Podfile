@@ -1,9 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
-
-# Uncomment this line to define a global platform for your project
 platform :ios, "7.0"
+use_frameworks!
 
-target "Story2Movie" do
+target "DBDCapital" do
     # Core
     pod 'AFNetworking', '~> 2.5'
     pod 'Mantle', '~> 2.0'
@@ -32,7 +30,7 @@ target "Story2Movie" do
 
 end
 
-target "Story2MovieTests" do
+target "DBDCapitalTests" do
 
 end
 
