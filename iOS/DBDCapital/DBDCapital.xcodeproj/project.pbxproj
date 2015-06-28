@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		838392E85B6D196C305545CD /* Pods_DBDCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00703D886B1BA63F447C860C /* Pods_DBDCapital.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C49E5F3C1B406ECA00FF4CDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5F3B1B406ECA00FF4CDB /* main.m */; };
 		C49E5F3F1B406ECA00FF4CDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5F3E1B406ECA00FF4CDB /* AppDelegate.m */; };
 		C49E5F421B406ECA00FF4CDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5F411B406ECA00FF4CDB /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00703D886B1BA63F447C860C /* Pods_DBDCapital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBDCapital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		689F3525E76EEE2DA5928FFD /* Pods-DBDCapital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDCapital.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital.release.xcconfig"; sourceTree = "<group>"; };
+		94F1EC050766C1A49CCD3AA3 /* Pods-DBDCapital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDCapital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital.debug.xcconfig"; sourceTree = "<group>"; };
 		C49E5F361B406ECA00FF4CDB /* DBDCapital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBDCapital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49E5F3A1B406ECA00FF4CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49E5F3B1B406ECA00FF4CDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838392E85B6D196C305545CD /* Pods_DBDCapital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73A1C4AD3F9A8FE0CD336E89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94F1EC050766C1A49CCD3AA3 /* Pods-DBDCapital.debug.xcconfig */,
+				689F3525E76EEE2DA5928FFD /* Pods-DBDCapital.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C49E5F2D1B406ECA00FF4CDB = {
 			isa = PBXGroup;
 			children = (
 				C49E5F381B406ECA00FF4CDB /* DBDCapital */,
 				C49E5F521B406ECB00FF4CDB /* DBDCapitalTests */,
 				C49E5F371B406ECA00FF4CDB /* Products */,
+				73A1C4AD3F9A8FE0CD336E89 /* Pods */,
+				C86A663677B42E5FBDCCC5F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +135,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C86A663677B42E5FBDCCC5F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00703D886B1BA63F447C860C /* Pods_DBDCapital.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C49E5F591B406ECB00FF4CDB /* Build configuration list for PBXNativeTarget "DBDCapital" */;
 			buildPhases = (
+				592A1C07EDD771F0C2613D14 /* Check Pods Manifest.lock */,
 				C49E5F321B406ECA00FF4CDB /* Sources */,
 				C49E5F331B406ECA00FF4CDB /* Frameworks */,
 				C49E5F341B406ECA00FF4CDB /* Resources */,
+				3ACE4D05098CFD46823B5E66 /* Embed Pods Frameworks */,
+				4E5AA0124D17C87F7DD76A9E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +240,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ACE4D05098CFD46823B5E66 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E5AA0124D17C87F7DD76A9E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		592A1C07EDD771F0C2613D14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C49E5F321B406ECA00FF4CDB /* Sources */ = {
@@ -347,6 +422,7 @@
 		};
 		C49E5F5A1B406ECB00FF4CDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F1EC050766C1A49CCD3AA3 /* Pods-DBDCapital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
@@ -357,6 +433,7 @@
 		};
 		C49E5F5B1B406ECB00FF4CDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 689F3525E76EEE2DA5928FFD /* Pods-DBDCapital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
@@ -418,6 +495,7 @@
 				C49E5F5B1B406ECB00FF4CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C49E5F5C1B406ECB00FF4CDB /* Build configuration list for PBXNativeTarget "DBDCapitalTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +504,7 @@
 				C49E5F5E1B406ECB00FF4CDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
