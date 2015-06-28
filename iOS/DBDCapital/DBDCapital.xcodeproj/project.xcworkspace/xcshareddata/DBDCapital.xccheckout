@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E080D912-6BA7-4BB9-AE95-5F955FB8D245</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7CC07F48A127C27AF0313E79F1AD7EEFB02B0BEA</key>
+		<string>https://github.com/yinanfang/GoldenCompass.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/DBDCapital/DBDCapital.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7CC07F48A127C27AF0313E79F1AD7EEFB02B0BEA</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yinanfang/GoldenCompass.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7CC07F48A127C27AF0313E79F1AD7EEFB02B0BEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7CC07F48A127C27AF0313E79F1AD7EEFB02B0BEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GoldenCompass</string>
+		</dict>
+	</array>
+</dict>
+</plist>
