@@ -1,3 +1,14 @@
+# Overal
+
+# iOS
+# build/
+# xcuserdata
+# *.xccheckout
+# DerivedData
+# *.ipa
+# *.xcworkspace
+
+# node and bower
 node_modules
 dist
 test/temp
