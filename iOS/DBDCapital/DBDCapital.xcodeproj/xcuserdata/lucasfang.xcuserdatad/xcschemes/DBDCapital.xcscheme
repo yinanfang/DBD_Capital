@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4D56B321B35CBC5002460DF"
+               BlueprintIdentifier = "C49E5F351B406ECA00FF4CDB"
                BuildableName = "DBDCapital.app"
                BlueprintName = "DBDCapital"
                ReferencedContainer = "container:DBDCapital.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4D56B4B1B35CBC5002460DF"
+               BlueprintIdentifier = "C49E5F4E1B406ECB00FF4CDB"
                BuildableName = "DBDCapitalTests.xctest"
                BlueprintName = "DBDCapitalTests"
                ReferencedContainer = "container:DBDCapital.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C4D56B4B1B35CBC5002460DF"
+               BlueprintIdentifier = "C49E5F4E1B406ECB00FF4CDB"
                BuildableName = "DBDCapitalTests.xctest"
                BlueprintName = "DBDCapitalTests"
                ReferencedContainer = "container:DBDCapital.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4D56B321B35CBC5002460DF"
+            BlueprintIdentifier = "C49E5F351B406ECA00FF4CDB"
             BuildableName = "DBDCapital.app"
             BlueprintName = "DBDCapital"
             ReferencedContainer = "container:DBDCapital.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4D56B321B35CBC5002460DF"
+            BlueprintIdentifier = "C49E5F351B406ECA00FF4CDB"
             BuildableName = "DBDCapital.app"
             BlueprintName = "DBDCapital"
             ReferencedContainer = "container:DBDCapital.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C4D56B321B35CBC5002460DF"
+            BlueprintIdentifier = "C49E5F351B406ECA00FF4CDB"
             BuildableName = "DBDCapital.app"
             BlueprintName = "DBDCapital"
             ReferencedContainer = "container:DBDCapital.xcodeproj">
