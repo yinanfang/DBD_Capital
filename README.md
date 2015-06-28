@@ -51,8 +51,19 @@ node
 10. Statistics
   * https://github.com/etsy/statsd   ??
 Dependencies:
-node-mysql
+  AngularJS
 
+node plugins
+  node-mysql
+  ejs
+
+generator
+  node - koa, express
+  browser - bluebird, tracer-compiler
+  both - async
+
+EC6
+  traceur-compiler
 
 ### Github badges https://github.com/badges/shields
 
