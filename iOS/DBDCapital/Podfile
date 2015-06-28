@@ -1,0 +1,38 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment this line to define a global platform for your project
+platform :ios, "7.0"
+
+target "Story2Movie" do
+    # Core
+    pod 'AFNetworking', '~> 2.5'
+    pod 'Mantle', '~> 2.0'
+    pod 'Masonry', '~> 0.6'
+    pod 'ReactiveCocoa', '~> 2.5'
+
+    # Animation
+    pod 'pop', '~> 1.0'
+    pod 'Shimmer', '~> 1.0'
+
+    # UI
+    pod 'FlatUIKit', '~> 1.6'
+    # pod 'FXBlurView', '~> 1.6'
+    # pod 'MBProgressHUD', '~> 0.9'
+    # pod 'TSMessages', '~> 0.9'
+
+    # Chart
+    pod 'Charts', '~> 2.1'
+
+    # Others
+
+    # Debug
+    pod 'CocoaLumberjack', '~> 2.0'
+    # pod 'Tweaks', '~> 2.0'
+    # pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+
+end
+
+target "Story2MovieTests" do
+
+end
+
