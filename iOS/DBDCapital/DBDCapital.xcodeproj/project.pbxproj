@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		838392E85B6D196C305545CD /* Pods_DBDCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00703D886B1BA63F447C860C /* Pods_DBDCapital.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4882F8C1B408823000D7EDD /* GCAppKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882F8B1B408823000D7EDD /* GCAppKit.m */; };
 		C49E5F3C1B406ECA00FF4CDB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5F3B1B406ECA00FF4CDB /* main.m */; };
 		C49E5F3F1B406ECA00FF4CDB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5F3E1B406ECA00FF4CDB /* AppDelegate.m */; };
 		C49E5F421B406ECA00FF4CDB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C49E5F411B406ECA00FF4CDB /* ViewController.m */; };
@@ -31,6 +32,9 @@
 		00703D886B1BA63F447C860C /* Pods_DBDCapital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBDCapital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		689F3525E76EEE2DA5928FFD /* Pods-DBDCapital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDCapital.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital.release.xcconfig"; sourceTree = "<group>"; };
 		94F1EC050766C1A49CCD3AA3 /* Pods-DBDCapital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDCapital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital.debug.xcconfig"; sourceTree = "<group>"; };
+		C4882F851B4085B2000D7EDD /* DBDCapital-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DBDCapital-Prefix.pch"; sourceTree = "<group>"; };
+		C4882F8A1B408823000D7EDD /* GCAppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAppKit.h; sourceTree = "<group>"; };
+		C4882F8B1B408823000D7EDD /* GCAppKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAppKit.m; sourceTree = "<group>"; };
 		C49E5F361B406ECA00FF4CDB /* DBDCapital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBDCapital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49E5F3A1B406ECA00FF4CDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49E5F3B1B406ECA00FF4CDB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +78,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C4882F891B4087D2000D7EDD /* GCAppKit */ = {
+			isa = PBXGroup;
+			children = (
+				C4882F8A1B408823000D7EDD /* GCAppKit.h */,
+				C4882F8B1B408823000D7EDD /* GCAppKit.m */,
+			);
+			path = GCAppKit;
+			sourceTree = "<group>";
+		};
 		C49E5F2D1B406ECA00FF4CDB = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +117,7 @@
 				C49E5F431B406ECA00FF4CDB /* Main.storyboard */,
 				C49E5F461B406ECA00FF4CDB /* Images.xcassets */,
 				C49E5F481B406ECA00FF4CDB /* LaunchScreen.xib */,
+				C4882F891B4087D2000D7EDD /* GCAppKit */,
 				C49E5F391B406ECA00FF4CDB /* Supporting Files */,
 			);
 			path = DBDCapital;
@@ -114,6 +128,7 @@
 			children = (
 				C49E5F3A1B406ECA00FF4CDB /* Info.plist */,
 				C49E5F3B1B406ECA00FF4CDB /* main.m */,
+				C4882F851B4085B2000D7EDD /* DBDCapital-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -294,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4882F8C1B408823000D7EDD /* GCAppKit.m in Sources */,
 				C49E5F421B406ECA00FF4CDB /* ViewController.m in Sources */,
 				C49E5F3F1B406ECA00FF4CDB /* AppDelegate.m in Sources */,
 				C49E5F3C1B406ECA00FF4CDB /* main.m in Sources */,
@@ -426,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -437,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
