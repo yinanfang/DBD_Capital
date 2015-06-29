@@ -17,6 +17,9 @@
 		C4882FD21B40E0FB000D7EDD /* GCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FD11B40E0FB000D7EDD /* GCColor.m */; };
 		C4882FD51B40E109000D7EDD /* GCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FD41B40E109000D7EDD /* GCNetwork.m */; };
 		C4882FD81B40EB0B000D7EDD /* GCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FD71B40EB0B000D7EDD /* GCLog.m */; };
+		C4882FDB1B40FDC2000D7EDD /* GCConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FDA1B40FDC2000D7EDD /* GCConstant.m */; };
+		C4882FDE1B40FDF9000D7EDD /* GCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FDD1B40FDF9000D7EDD /* GCBundle.m */; };
+		C4882FE11B410023000D7EDD /* GCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FE01B410023000D7EDD /* GCConfiguration.m */; };
 		CB3B49623EF81435B286CF32 /* Pods_DBDCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610A75FBEDC031BC962C1709 /* Pods_DBDCapital.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,12 @@
 		C4882FD41B40E109000D7EDD /* GCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNetwork.m; sourceTree = "<group>"; };
 		C4882FD61B40EB0B000D7EDD /* GCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCLog.h; sourceTree = "<group>"; };
 		C4882FD71B40EB0B000D7EDD /* GCLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCLog.m; sourceTree = "<group>"; };
+		C4882FD91B40FDC2000D7EDD /* GCConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCConstant.h; sourceTree = "<group>"; };
+		C4882FDA1B40FDC2000D7EDD /* GCConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCConstant.m; sourceTree = "<group>"; };
+		C4882FDC1B40FDF9000D7EDD /* GCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCBundle.h; sourceTree = "<group>"; };
+		C4882FDD1B40FDF9000D7EDD /* GCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBundle.m; sourceTree = "<group>"; };
+		C4882FDF1B410023000D7EDD /* GCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCConfiguration.h; sourceTree = "<group>"; };
+		C4882FE01B410023000D7EDD /* GCConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +130,6 @@
 				C4882FC61B40DDAF000D7EDD /* View */,
 				C4882FC71B40DDB6000D7EDD /* ModelView */,
 				C4882FC81B40DDBE000D7EDD /* Model */,
-				C4882FC91B40DE1B000D7EDD /* Configuration */,
 				C4882FC01B4092B3000D7EDD /* GCAppKit */,
 				C4882FA61B409175000D7EDD /* Images.xcassets */,
 				C4882F991B409175000D7EDD /* Supporting Files */,
@@ -162,8 +170,14 @@
 			children = (
 				C4882FC11B4092D6000D7EDD /* GCAppKit.h */,
 				C4882FC21B4092D6000D7EDD /* GCAppKit.m */,
+				C4882FDC1B40FDF9000D7EDD /* GCBundle.h */,
+				C4882FDD1B40FDF9000D7EDD /* GCBundle.m */,
 				C4882FD01B40E0FB000D7EDD /* GCColor.h */,
 				C4882FD11B40E0FB000D7EDD /* GCColor.m */,
+				C4882FDF1B410023000D7EDD /* GCConfiguration.h */,
+				C4882FE01B410023000D7EDD /* GCConfiguration.m */,
+				C4882FD91B40FDC2000D7EDD /* GCConstant.h */,
+				C4882FDA1B40FDC2000D7EDD /* GCConstant.m */,
 				C4882FCD1B40E0F0000D7EDD /* GCFactory.h */,
 				C4882FCE1B40E0F0000D7EDD /* GCFactory.m */,
 				C4882FD61B40EB0B000D7EDD /* GCLog.h */,
@@ -194,13 +208,6 @@
 			children = (
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C4882FC91B40DE1B000D7EDD /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,13 +361,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4882FE11B410023000D7EDD /* GCConfiguration.m in Sources */,
 				C4882FD81B40EB0B000D7EDD /* GCLog.m in Sources */,
 				C4882FCF1B40E0F0000D7EDD /* GCFactory.m in Sources */,
 				C4882FC31B4092D6000D7EDD /* GCAppKit.m in Sources */,
 				C4882F9F1B409175000D7EDD /* GCAppDelegate.m in Sources */,
 				C4882FD21B40E0FB000D7EDD /* GCColor.m in Sources */,
+				C4882FDE1B40FDF9000D7EDD /* GCBundle.m in Sources */,
 				C4882FD51B40E109000D7EDD /* GCNetwork.m in Sources */,
 				C4882F9C1B409175000D7EDD /* main.m in Sources */,
+				C4882FDB1B40FDC2000D7EDD /* GCConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

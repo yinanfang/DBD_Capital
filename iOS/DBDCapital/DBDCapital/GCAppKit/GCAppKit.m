@@ -55,6 +55,19 @@
 }
 
 
+// TODO: To be updated
++ (void)setHasShownTour:(BOOL)mode
+{
+//  [[NSUserDefaults standardUserDefaults] setBool:mode forKey:NSUserDefaultsKeyForDidShownTour];
+//  [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
++ (BOOL)didRunAppBefore
+{
+//  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//  BOOL didRunAppBefore = [defaults boolForKey:NSUserDefaultsKeyForDidRunAppBefore];
+//  return didRunAppBefore ? YES : NO;
+  return YES;
+}
 
 @end

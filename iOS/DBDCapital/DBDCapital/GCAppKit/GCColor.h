@@ -1,5 +1,5 @@
 //
-//  GCAppKit.h
+//  GCColor.h
 //  DBDCapital
 //
 //  Created by Lucas Fang on 6/28/15.
@@ -8,13 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GCAppKit : NSObject
-
-- (void)setupApplicationWithProductionMode:(BOOL)mode;
+@interface GCColor : NSObject
 
 // TODO: To be updated
-+ (void)setHasShownTour:(BOOL)mode;
-+ (BOOL)didRunAppBefore;
-
++ (UIColor *)getColorWithRGBAinHex:(NSUInteger)color;
 
 @end
