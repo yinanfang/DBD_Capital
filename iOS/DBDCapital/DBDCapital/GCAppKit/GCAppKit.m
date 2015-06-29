@@ -29,7 +29,7 @@
 {
   // Logging
   [self.log setupLogging];
-
+  
   // Cache
   [self setCachePolicy];
 

@@ -5,6 +5,7 @@ target "DBDCapital" do
     # Core for all
     pod 'ReactiveCocoa', '~> 2.5'
     pod 'CocoaLumberjack', '~> 2.0'
+    pod 'libextobjc', '~> 0.4'
 
     # Animation
     pod 'pop', '~> 1.0'

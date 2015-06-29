@@ -56,6 +56,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Masonry.framework'
   install_framework 'ReactiveCocoa.framework'
   install_framework 'Shimmer.framework'
+  install_framework 'libextobjc.framework'
   install_framework 'pop.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -67,5 +68,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Masonry.framework'
   install_framework 'ReactiveCocoa.framework'
   install_framework 'Shimmer.framework'
+  install_framework 'libextobjc.framework'
   install_framework 'pop.framework'
 fi

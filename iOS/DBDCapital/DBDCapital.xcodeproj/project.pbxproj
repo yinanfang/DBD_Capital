@@ -13,6 +13,10 @@
 		C4882FAA1B409175000D7EDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4882FA81B409175000D7EDD /* LaunchScreen.xib */; };
 		C4882FB61B409175000D7EDD /* DBDCapitalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FB51B409175000D7EDD /* DBDCapitalTests.m */; };
 		C4882FC31B4092D6000D7EDD /* GCAppKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FC21B4092D6000D7EDD /* GCAppKit.m */; };
+		C4882FCF1B40E0F0000D7EDD /* GCFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FCE1B40E0F0000D7EDD /* GCFactory.m */; };
+		C4882FD21B40E0FB000D7EDD /* GCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FD11B40E0FB000D7EDD /* GCColor.m */; };
+		C4882FD51B40E109000D7EDD /* GCNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FD41B40E109000D7EDD /* GCNetwork.m */; };
+		C4882FD81B40EB0B000D7EDD /* GCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FD71B40EB0B000D7EDD /* GCLog.m */; };
 		CB3B49623EF81435B286CF32 /* Pods_DBDCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610A75FBEDC031BC962C1709 /* Pods_DBDCapital.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,14 @@
 		C4882FBF1B409295000D7EDD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		C4882FC11B4092D6000D7EDD /* GCAppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAppKit.h; sourceTree = "<group>"; };
 		C4882FC21B4092D6000D7EDD /* GCAppKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAppKit.m; sourceTree = "<group>"; };
+		C4882FCD1B40E0F0000D7EDD /* GCFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFactory.h; sourceTree = "<group>"; };
+		C4882FCE1B40E0F0000D7EDD /* GCFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFactory.m; sourceTree = "<group>"; };
+		C4882FD01B40E0FB000D7EDD /* GCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCColor.h; sourceTree = "<group>"; };
+		C4882FD11B40E0FB000D7EDD /* GCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCColor.m; sourceTree = "<group>"; };
+		C4882FD31B40E109000D7EDD /* GCNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetwork.h; sourceTree = "<group>"; };
+		C4882FD41B40E109000D7EDD /* GCNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNetwork.m; sourceTree = "<group>"; };
+		C4882FD61B40EB0B000D7EDD /* GCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCLog.h; sourceTree = "<group>"; };
+		C4882FD71B40EB0B000D7EDD /* GCLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +162,14 @@
 			children = (
 				C4882FC11B4092D6000D7EDD /* GCAppKit.h */,
 				C4882FC21B4092D6000D7EDD /* GCAppKit.m */,
+				C4882FD01B40E0FB000D7EDD /* GCColor.h */,
+				C4882FD11B40E0FB000D7EDD /* GCColor.m */,
+				C4882FCD1B40E0F0000D7EDD /* GCFactory.h */,
+				C4882FCE1B40E0F0000D7EDD /* GCFactory.m */,
+				C4882FD61B40EB0B000D7EDD /* GCLog.h */,
+				C4882FD71B40EB0B000D7EDD /* GCLog.m */,
+				C4882FD31B40E109000D7EDD /* GCNetwork.h */,
+				C4882FD41B40E109000D7EDD /* GCNetwork.m */,
 			);
 			path = GCAppKit;
 			sourceTree = "<group>";
@@ -334,8 +354,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4882FD81B40EB0B000D7EDD /* GCLog.m in Sources */,
+				C4882FCF1B40E0F0000D7EDD /* GCFactory.m in Sources */,
 				C4882FC31B4092D6000D7EDD /* GCAppKit.m in Sources */,
 				C4882F9F1B409175000D7EDD /* GCAppDelegate.m in Sources */,
+				C4882FD21B40E0FB000D7EDD /* GCColor.m in Sources */,
+				C4882FD51B40E109000D7EDD /* GCNetwork.m in Sources */,
 				C4882F9C1B409175000D7EDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +482,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lucasfang/GoogleDrive/Projects/GoldenCompass/iOS/DBDCapital/DBDCapital/PrefixHeader.pch;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -471,6 +497,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/lucasfang/GoogleDrive/Projects/GoldenCompass/iOS/DBDCapital/DBDCapital/PrefixHeader.pch;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

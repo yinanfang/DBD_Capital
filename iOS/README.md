@@ -20,6 +20,9 @@ Create other groups, corresponding folders in Bundle directory, and relate them 
 
 Delete default storyboard and viewController
 
+Enable XcodeColor: https://github.com/CocoaLumberjack/CocoaLumberjack/issues/50#issuecomment-34286656
+
+
 
 
 

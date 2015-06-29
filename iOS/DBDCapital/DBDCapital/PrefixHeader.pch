@@ -14,7 +14,8 @@
   #import <Availability.h>
 
   #import <ReactiveCocoa/ReactiveCocoa.h>
-  #import <ReactiveCocoa/EXTScope.h>
+
+  #import <libextobjc/EXTScope.h>
 
   #import "GCLog.h"
 #endif
