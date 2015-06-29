@@ -2,7 +2,7 @@
 
 
 ################################# Github Objective-C.gitignore
-
+*.xcuserstate
 
 ################################# node project Specific
 

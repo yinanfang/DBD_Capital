@@ -20,6 +20,7 @@
 		C4882FDB1B40FDC2000D7EDD /* GCConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FDA1B40FDC2000D7EDD /* GCConstant.m */; };
 		C4882FDE1B40FDF9000D7EDD /* GCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FDD1B40FDF9000D7EDD /* GCBundle.m */; };
 		C4882FE11B410023000D7EDD /* GCConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FE01B410023000D7EDD /* GCConfiguration.m */; };
+		C4882FE41B4105AF000D7EDD /* GCWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FE31B4105AF000D7EDD /* GCWelcomeViewController.m */; };
 		CB3B49623EF81435B286CF32 /* Pods_DBDCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610A75FBEDC031BC962C1709 /* Pods_DBDCapital.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,8 @@
 		C4882FDD1B40FDF9000D7EDD /* GCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCBundle.m; sourceTree = "<group>"; };
 		C4882FDF1B410023000D7EDD /* GCConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCConfiguration.h; sourceTree = "<group>"; };
 		C4882FE01B410023000D7EDD /* GCConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCConfiguration.m; sourceTree = "<group>"; };
+		C4882FE21B4105AF000D7EDD /* GCWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWelcomeViewController.h; sourceTree = "<group>"; };
+		C4882FE31B4105AF000D7EDD /* GCWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +194,8 @@
 		C4882FC61B40DDAF000D7EDD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4882FE21B4105AF000D7EDD /* GCWelcomeViewController.h */,
+				C4882FE31B4105AF000D7EDD /* GCWelcomeViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -370,6 +375,7 @@
 				C4882FDE1B40FDF9000D7EDD /* GCBundle.m in Sources */,
 				C4882FD51B40E109000D7EDD /* GCNetwork.m in Sources */,
 				C4882F9C1B409175000D7EDD /* main.m in Sources */,
+				C4882FE41B4105AF000D7EDD /* GCWelcomeViewController.m in Sources */,
 				C4882FDB1B40FDC2000D7EDD /* GCConstant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

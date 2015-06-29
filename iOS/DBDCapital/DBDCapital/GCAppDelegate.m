@@ -9,6 +9,7 @@
 #import "GCAppDelegate.h"
 
 #import "GCAppKit.h"
+#import "GCWelcomeViewController.h"
 
 @interface GCAppDelegate ()
 
@@ -23,9 +24,22 @@
   self.appkit = [[GCAppKit alloc] init];
   [self.appkit setupApplicationWithProductionMode:NO];
 
-
+  self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+  // Override point for customization after application launch.
+  self.window.backgroundColor = [UIColor clearColor];
+  UINavigationController *navigationController = [[UINavigationController alloc] init];
+  self.window.rootViewController = navigationController;
+  GCWelcomeViewController *welcomeViewController = [[GCWelcomeViewController alloc] init];
+  [navigationController pushViewController:welcomeViewController animated:NO];
+  [self.window makeKeyAndVisible];
 
   return YES;
+}
+
+// Overwrite setting in the Summary/Info.plist
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+  return UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
