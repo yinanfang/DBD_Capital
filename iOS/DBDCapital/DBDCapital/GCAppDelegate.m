@@ -6,13 +6,15 @@
 //  Copyright (c) 2015 DBD Capital. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "GCAppDelegate.h"
 
-@interface AppDelegate ()
+#import "GCAppKit.h"
+
+@interface GCAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation GCAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

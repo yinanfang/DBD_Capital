@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		C4882F9C1B409175000D7EDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882F9B1B409175000D7EDD /* main.m */; };
-		C4882F9F1B409175000D7EDD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882F9E1B409175000D7EDD /* AppDelegate.m */; };
-		C4882FA21B409175000D7EDD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FA11B409175000D7EDD /* ViewController.m */; };
-		C4882FA51B409175000D7EDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4882FA31B409175000D7EDD /* Main.storyboard */; };
+		C4882F9F1B409175000D7EDD /* GCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882F9E1B409175000D7EDD /* GCAppDelegate.m */; };
 		C4882FA71B409175000D7EDD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4882FA61B409175000D7EDD /* Images.xcassets */; };
 		C4882FAA1B409175000D7EDD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4882FA81B409175000D7EDD /* LaunchScreen.xib */; };
 		C4882FB61B409175000D7EDD /* DBDCapitalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FB51B409175000D7EDD /* DBDCapitalTests.m */; };
+		C4882FC31B4092D6000D7EDD /* GCAppKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4882FC21B4092D6000D7EDD /* GCAppKit.m */; };
+		CB3B49623EF81435B286CF32 /* Pods_DBDCapital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610A75FBEDC031BC962C1709 /* Pods_DBDCapital.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +27,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C40DD1C0FF0CEA415B5AC75 /* Pods-DBDCapital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDCapital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital.debug.xcconfig"; sourceTree = "<group>"; };
+		610A75FBEDC031BC962C1709 /* Pods_DBDCapital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBDCapital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF9184623E92B9D91A7DD792 /* Pods-DBDCapital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBDCapital.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital.release.xcconfig"; sourceTree = "<group>"; };
 		C4882F961B409175000D7EDD /* DBDCapital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBDCapital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4882F9A1B409175000D7EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4882F9B1B409175000D7EDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C4882F9D1B409175000D7EDD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C4882F9E1B409175000D7EDD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C4882FA01B409175000D7EDD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C4882FA11B409175000D7EDD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C4882FA41B409175000D7EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4882F9D1B409175000D7EDD /* GCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAppDelegate.h; sourceTree = "<group>"; };
+		C4882F9E1B409175000D7EDD /* GCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppDelegate.m; sourceTree = "<group>"; };
 		C4882FA61B409175000D7EDD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C4882FA91B409175000D7EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C4882FAF1B409175000D7EDD /* DBDCapitalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBDCapitalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4882FB41B409175000D7EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4882FB51B409175000D7EDD /* DBDCapitalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBDCapitalTests.m; sourceTree = "<group>"; };
+		C4882FBF1B409295000D7EDD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C4882FC11B4092D6000D7EDD /* GCAppKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAppKit.h; sourceTree = "<group>"; };
+		C4882FC21B4092D6000D7EDD /* GCAppKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAppKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3B49623EF81435B286CF32 /* Pods_DBDCapital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +64,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C56791660186B62F6BB044D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C40DD1C0FF0CEA415B5AC75 /* Pods-DBDCapital.debug.xcconfig */,
+				BF9184623E92B9D91A7DD792 /* Pods-DBDCapital.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE5D9F2B6C3B58FE691752AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				610A75FBEDC031BC962C1709 /* Pods_DBDCapital.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C4882F8D1B409175000D7EDD = {
 			isa = PBXGroup;
 			children = (
 				C4882F981B409175000D7EDD /* DBDCapital */,
 				C4882FB21B409175000D7EDD /* DBDCapitalTests */,
 				C4882F971B409175000D7EDD /* Products */,
+				6C56791660186B62F6BB044D /* Pods */,
+				AE5D9F2B6C3B58FE691752AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,13 +104,11 @@
 		C4882F981B409175000D7EDD /* DBDCapital */ = {
 			isa = PBXGroup;
 			children = (
-				C4882F9D1B409175000D7EDD /* AppDelegate.h */,
-				C4882F9E1B409175000D7EDD /* AppDelegate.m */,
-				C4882FA01B409175000D7EDD /* ViewController.h */,
-				C4882FA11B409175000D7EDD /* ViewController.m */,
-				C4882FA31B409175000D7EDD /* Main.storyboard */,
+				C4882F9D1B409175000D7EDD /* GCAppDelegate.h */,
+				C4882F9E1B409175000D7EDD /* GCAppDelegate.m */,
 				C4882FA61B409175000D7EDD /* Images.xcassets */,
 				C4882FA81B409175000D7EDD /* LaunchScreen.xib */,
+				C4882FC01B4092B3000D7EDD /* GCAppKit */,
 				C4882F991B409175000D7EDD /* Supporting Files */,
 			);
 			path = DBDCapital;
@@ -98,6 +119,7 @@
 			children = (
 				C4882F9A1B409175000D7EDD /* Info.plist */,
 				C4882F9B1B409175000D7EDD /* main.m */,
+				C4882FBF1B409295000D7EDD /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,6 +141,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C4882FC01B4092B3000D7EDD /* GCAppKit */ = {
+			isa = PBXGroup;
+			children = (
+				C4882FC11B4092D6000D7EDD /* GCAppKit.h */,
+				C4882FC21B4092D6000D7EDD /* GCAppKit.m */,
+			);
+			path = GCAppKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4882FB91B409175000D7EDD /* Build configuration list for PBXNativeTarget "DBDCapital" */;
 			buildPhases = (
+				FC0FE4412146C4255C7A7CDE /* Check Pods Manifest.lock */,
 				C4882F921B409175000D7EDD /* Sources */,
 				C4882F931B409175000D7EDD /* Frameworks */,
 				C4882F941B409175000D7EDD /* Resources */,
+				68E5C6DB1666AE25EABFA215 /* Embed Pods Frameworks */,
+				C7694E118C127457B89CD777 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,6 +197,7 @@
 		C4882F8E1B409175000D7EDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GC;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "DBD Capital";
 				TargetAttributes = {
@@ -199,7 +234,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4882FA51B409175000D7EDD /* Main.storyboard in Resources */,
 				C4882FAA1B409175000D7EDD /* LaunchScreen.xib in Resources */,
 				C4882FA71B409175000D7EDD /* Images.xcassets in Resources */,
 			);
@@ -214,13 +248,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68E5C6DB1666AE25EABFA215 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7694E118C127457B89CD777 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0FE4412146C4255C7A7CDE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C4882F921B409175000D7EDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4882FA21B409175000D7EDD /* ViewController.m in Sources */,
-				C4882F9F1B409175000D7EDD /* AppDelegate.m in Sources */,
+				C4882FC31B4092D6000D7EDD /* GCAppKit.m in Sources */,
+				C4882F9F1B409175000D7EDD /* GCAppDelegate.m in Sources */,
 				C4882F9C1B409175000D7EDD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +326,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C4882FA31B409175000D7EDD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4882FA41B409175000D7EDD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C4882FA81B409175000D7EDD /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,8 +421,10 @@
 		};
 		C4882FBA1B409175000D7EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C40DD1C0FF0CEA415B5AC75 /* Pods-DBDCapital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -358,8 +434,10 @@
 		};
 		C4882FBB1B409175000D7EDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF9184623E92B9D91A7DD792 /* Pods-DBDCapital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				INFOPLIST_FILE = DBDCapital/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -420,6 +498,7 @@
 				C4882FBB1B409175000D7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4882FBC1B409175000D7EDD /* Build configuration list for PBXNativeTarget "DBDCapitalTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +507,7 @@
 				C4882FBE1B409175000D7EDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
