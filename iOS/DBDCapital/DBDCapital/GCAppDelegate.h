@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class GCAppKit;
+
 @interface GCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, strong, readwrite) GCAppKit *appkit;
 
 @end
 

@@ -19,6 +19,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+
+  self.appkit = [[GCAppKit alloc] init];
+  [self.appkit setupApplicationWithProductionMode:NO];
+
+
+
   return YES;
 }
 
