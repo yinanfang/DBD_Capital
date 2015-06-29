@@ -1,0 +1,6 @@
+framework module Pods_DBDCapital {
+  umbrella header "Pods-DBDCapital-umbrella.h"
+
+  export *
+  module * { export * }
+}

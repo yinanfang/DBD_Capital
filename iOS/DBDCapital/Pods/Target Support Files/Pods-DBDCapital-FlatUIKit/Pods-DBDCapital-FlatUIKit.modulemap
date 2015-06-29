@@ -1,0 +1,6 @@
+framework module FlatUIKit {
+  umbrella header "Pods-DBDCapital-FlatUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
