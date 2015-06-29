@@ -12,6 +12,32 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 //#import <ReactiveCocoa/EXTScope.h>
 
+
+
+// Don't change this
+#pragma mark - CocoaLumberjack Logging Constant
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#if DEBUG
+static const int ddLogLevel = DDLogLevelVerbose;
+#else
+static const int ddLogLevel = DDLogLevelWarning;
+#endif
+// Add a testing color for XcodeColors
+#define XCODE_COLORS_ESCAPE @"\033["
+#define XCODE_COLORS_RESET_FG  XCODE_COLORS_ESCAPE @"fg;" // Clear any foreground color
+#define XCODE_COLORS_RESET_BG  XCODE_COLORS_ESCAPE @"bg;" // Clear any background color
+#define XCODE_COLORS_RESET     XCODE_COLORS_ESCAPE @";"   // Clear any foreground or background
+#define DDLogTest(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__)
+
+
+
+
 @interface GCAppKit : NSObject
+
+- (void)setupApplicationWithProductionMode:(BOOL)mode;
+
+
+
+
 
 @end
