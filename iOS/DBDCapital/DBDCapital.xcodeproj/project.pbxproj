@@ -106,9 +106,12 @@
 			children = (
 				C4882F9D1B409175000D7EDD /* GCAppDelegate.h */,
 				C4882F9E1B409175000D7EDD /* GCAppDelegate.m */,
-				C4882FA61B409175000D7EDD /* Images.xcassets */,
-				C4882FA81B409175000D7EDD /* LaunchScreen.xib */,
+				C4882FC61B40DDAF000D7EDD /* View */,
+				C4882FC71B40DDB6000D7EDD /* ModelView */,
+				C4882FC81B40DDBE000D7EDD /* Model */,
+				C4882FC91B40DE1B000D7EDD /* Configuration */,
 				C4882FC01B4092B3000D7EDD /* GCAppKit */,
+				C4882FA61B409175000D7EDD /* Images.xcassets */,
 				C4882F991B409175000D7EDD /* Supporting Files */,
 			);
 			path = DBDCapital;
@@ -117,6 +120,7 @@
 		C4882F991B409175000D7EDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C4882FA81B409175000D7EDD /* LaunchScreen.xib */,
 				C4882F9A1B409175000D7EDD /* Info.plist */,
 				C4882F9B1B409175000D7EDD /* main.m */,
 				C4882FBF1B409295000D7EDD /* PrefixHeader.pch */,
@@ -148,6 +152,35 @@
 				C4882FC21B4092D6000D7EDD /* GCAppKit.m */,
 			);
 			path = GCAppKit;
+			sourceTree = "<group>";
+		};
+		C4882FC61B40DDAF000D7EDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4882FC71B40DDB6000D7EDD /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ModelView;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C4882FC81B40DDBE000D7EDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4882FC91B40DE1B000D7EDD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
