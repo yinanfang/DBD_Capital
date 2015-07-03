@@ -26,12 +26,14 @@ Enable XcodeColor: https://github.com/CocoaLumberjack/CocoaLumberjack/issues/50#
 
 
 
+TODOs:
 
 Use Images.xcassets to avoid different naming suffix for image files
 
+LocalizedStrings
 
-
-
+Frameworks
+  Login screen
 
 Document folder structure
 GCAppKit
