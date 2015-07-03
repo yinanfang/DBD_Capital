@@ -1,5 +1,15 @@
-# DBD_Capital
-Short description here.
+![Golden Compass: An Elegant Full-Stack Project](https://raw.githubusercontent.com/yinanfang/GoldenCompass/master/Others/logo/logo_github.png)
+A full-stack project with Node.js backend, HTML5 website and iOS app
+
+## Features
+
+- [x] Chainable Request / Response methods
+- [x] URL / JSON / plist Parameter Encoding
+- [x] Upload File / Data / Stream
+- [x] Download using Request or Resume data
+- [x] Authentication with NSURLCredential
+- [x] HTTP Response Validation
+
 
 Quick Installation
 
