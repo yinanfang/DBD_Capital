@@ -1,56 +1,53 @@
 ![Golden Compass: An Elegant Full-Stack Project](https://raw.githubusercontent.com/yinanfang/GoldenCompass/master/Others/logo/logo_github.png)
+
 A full-stack project with Node.js backend, HTML5 website and iOS app
 
-## Features
+## Quick Features
 
-- [x] Chainable Request / Response methods
-- [x] URL / JSON / plist Parameter Encoding
-- [x] Upload File / Data / Stream
-- [x] Download using Request or Resume data
-- [x] Authentication with NSURLCredential
-- [x] HTTP Response Validation
+- [x] iOS app
+- [x] Node backend
+- [ ] HTML5 website
 
+## Requirements
 
-Quick Installation
+- iOS 8.0+
+- Xcode 6.3+
+- Node 0.11.2+
+
+## Quick Installation
 
     git clone https://github.com/yinanfang/GoldenCompass; cd GoldenCompass
     cd node; npm install -g gulp bower && npm install && bower install; cd ..
     cd iOS; cocoapod install; cd ..
 
-Detailed setup workflow:
-iOS
+## Detailed Features:
 
-node
+### iOS
 
-## Features:
-iOS
-Multi-queue and multi-thread
-third-party libraries
-    List each library and brief functionality
-Dependencies Injection with NSNotification+Factory Methods
+#### Extensive Use of Third-Party Libraries
+
+- ReactiveCocoa
+- AFNetworking
+- Bolts-iOS
+- Blah blah blah
+
+#### Multi-Queue and Multi-Thread (TODO)
+
+#### Dependencies Injection with NSNotification+Factory Methods (TODO)
   Store info in info.plist. Create a reader and writer
   No framework because Typhoon is in Objective-C and I'm about to move to Swift
   Pass in all needed state from constructor
   This is called Dependency Injection, by the way; you don't need to use Spring or any special IoC container, just so long as your general class design accepts its dependencies from the caller instead of instantiating them on its own or referencing global state.
-Bolts-iOS
-Core-Data?
 
-Architecture Decision
-View Controller Containment
+#### Core-Data?
 
+#### Architecture Decision
 
-Document folder structure
-GCAppKit
-  GCAppAPI
-  GCUtility
-  GCNetworking
-  GCBundle
-  GCLogDump
-  GCConstants
-  GCMacros
-  GCPList
-    http://stackoverflow.com/questions/21119922/how-to-read-a-plist-and-create-different-arrays-from-its-content-in-xcode
-    https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/ReadWritePlistData/ReadWritePlistData.html
+- View Controller Containment
+
+### Node.js
+
+#### Build System
 
 node
 1. Use development tools that automatesrestarts and browser refresh

@@ -33,3 +33,15 @@ Use Images.xcassets to avoid different naming suffix for image files
 
 
 
+Document folder structure
+GCAppKit
+  GCAppAPI
+  GCUtility
+  GCNetworking
+  GCBundle
+  GCLogDump
+  GCConstants
+  GCMacros
+  GCPList
+    http://stackoverflow.com/questions/21119922/how-to-read-a-plist-and-create-different-arrays-from-its-content-in-xcode
+    https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/ReadWritePlistData/ReadWritePlistData.html
