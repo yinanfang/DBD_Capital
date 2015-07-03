@@ -16,7 +16,7 @@ node
 iOS
 Multi-queue and multi-thread
 third-party libraries
-    blah blah blah
+    List each library and brief functionality
 Dependencies Injection with NSNotification+Factory Methods
   Store info in info.plist. Create a reader and writer
   No framework because Typhoon is in Objective-C and I'm about to move to Swift
@@ -24,6 +24,12 @@ Dependencies Injection with NSNotification+Factory Methods
   This is called Dependency Injection, by the way; you don't need to use Spring or any special IoC container, just so long as your general class design accepts its dependencies from the caller instead of instantiating them on its own or referencing global state.
 Bolts-iOS
 Core-Data?
+
+Architecture Decision
+View Controller Containment
+
+
+Document folder structure
 GCAppKit
   GCAppAPI
   GCUtility
