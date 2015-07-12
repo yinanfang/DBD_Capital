@@ -69,15 +69,21 @@ node
 9. Advanced debuging with https://github.com/visionmedia/debug
 10. Statistics
   * https://github.com/etsy/statsd   ??
+11. Password Security
+  * BCrypt
+
 Dependencies:
   AngularJS
 
 node plugins
   node-mysql
   ejs
+  express-session
+  expressjs/csurf
+  dcodeIO/bcrypt.js
 
 generator
-  node - koa, express
+  node - express; koa (TODO)
   browser - bluebird, tracer-compiler
   both - async
 
