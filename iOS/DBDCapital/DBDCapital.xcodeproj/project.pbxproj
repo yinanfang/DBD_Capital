@@ -222,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4882FB91B409175000D7EDD /* Build configuration list for PBXNativeTarget "DBDCapital" */;
 			buildPhases = (
+				C4AD56BC1B52046100A67D66 /* Generate Catalog Classes */,
 				FC0FE4412146C4255C7A7CDE /* Check Pods Manifest.lock */,
 				C4882F921B409175000D7EDD /* Sources */,
 				C4882F931B409175000D7EDD /* Frameworks */,
@@ -328,6 +329,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBDCapital/Pods-DBDCapital-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C4AD56BC1B52046100A67D66 /* Generate Catalog Classes */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Catalog Classes";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Type a script or drag a script file from your workspace to insert its path";
 		};
 		C7694E118C127457B89CD777 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

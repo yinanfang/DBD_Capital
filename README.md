@@ -1,4 +1,4 @@
-![Golden Compass: An Elegant Full-Stack Project](https://raw.githubusercontent.com/yinanfang/GoldenCompass/master/Others/logo/logo_github.png)
+![Golden Compass: An Elegant Full-Stack Project](https://raw.githubusercontent.com/yinanfang/GoldenCompass/master/Others/images/logo_github.png)
 
 A full-stack project with Node.js backend, HTML5 website and iOS app
 
@@ -45,6 +45,8 @@ A full-stack project with Node.js backend, HTML5 website and iOS app
 
 #### Core-Data?
 
+#### Translator: https://poeditor.com/
+
 #### Architecture Decision
 
 - View Controller Containment
@@ -81,6 +83,8 @@ node plugins
   express-session
   expressjs/csurf
   dcodeIO/bcrypt.js
+  expressjs/cors
+  hokaccha/node-jwt-simple
 
 generator
   node - express; koa (TODO)
