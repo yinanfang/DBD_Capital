@@ -1,6 +1,6 @@
 ![Golden Compass: An Elegant Full-Stack Project](https://raw.githubusercontent.com/yinanfang/GoldenCompass/master/Others/images/logo_github.png)
 
-A full-stack project with Node.js backend, HTML5 website and iOS app
+An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 
 ## Quick Features
 
@@ -51,7 +51,17 @@ A full-stack project with Node.js backend, HTML5 website and iOS app
 
 - View Controller Containment
 
+### iOS Application
+
+1. Compare Architecture: http://khanlou.com/2014/03/model-view-whatever/
+
 ### Node.js
+
+#### Architecture
+
+1. Authorization Compare: https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/
+
+
 
 #### Build System
 
