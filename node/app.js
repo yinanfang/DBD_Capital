@@ -7,9 +7,9 @@ var express = require('express');
 var http = require('http');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var jwt = require('jwt-simple'),
+var jwt = require('jwt-simple');
 
-var _ = require('underscore')._,
+// var _ = require('underscore')._,
 
 
 var app = express();
