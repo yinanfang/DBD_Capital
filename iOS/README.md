@@ -22,7 +22,8 @@ Delete default storyboard and viewController
 
 Enable XcodeColor: https://github.com/CocoaLumberjack/CocoaLumberjack/issues/50#issuecomment-34286656
 
-
+Project Settings
+1. Build Settings -> Implicit retain of 'self' within blocks
 
 
 

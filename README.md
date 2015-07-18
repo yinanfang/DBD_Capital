@@ -20,6 +20,8 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
     cd node; npm install -g gulp bower && npm install && bower install; cd ..
     cd iOS; cocoapod install; cd ..
 
+    Create $HOME/node/config/config.js and fill in info like $HOME/Others/configTemplate.js
+
 ## Detailed Features:
 
 ### iOS
@@ -88,13 +90,13 @@ Dependencies:
   AngularJS
 
 node plugins
-  node-mysql
   ejs
   express-session
-  expressjs/csurf
   dcodeIO/bcrypt.js
   expressjs/cors
   hokaccha/node-jwt-simple
+  node-csv
+  PapaParse
 
 generator
   node - express; koa (TODO)
