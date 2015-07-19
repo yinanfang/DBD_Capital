@@ -20,9 +20,19 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 
     Create $HOME/node/config/config.js and fill in info like $HOME/Others/configTemplate.js
 
+## Product Features
+
+## Architecture Features
+
+## UI/UX Design Features
+
 ## iOS Features:
 - [ ] Strong Mudularity
   - [ ] Modular and Reusable code
+- [ ] Multi-Threaded Programming
+  - [ ] Only update UI from the main thread. Do other work in the secondary thread
+- [ ] Dependencies Injection with NSNotification+Factory Methods
+- [ ] Localization of English, Chinese
 
 #### Use of Popular Third-Party Libraries
 - Core for all
@@ -36,26 +46,13 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 - Networking
   - AFNetworking
 - Routing
-  - JLRoutes
+  - JLRoutes?
 - Debug
   - chisel
-
-#### Multi-Threaded Programming
-Only update UI from the main thread. Do other work in the secondary thread
-
-- Queue
-  - Default Main Queue
-  - Default Background Queue
-  - Data Layer Queue
-
-#### Dependencies Injection with NSNotification+Factory Methods
 
 #### Architecture Decision
 - [VIPER](http://www.objc.io/issues/13-architecture/viper/)
   - After Comparing the [difference](http://khanlou.com/2014/03/model-view-whatever/) between MVC, MVVM, and VIPER, I chose to use VIPER because of its scalability.
-
-#### Localization
-  - [ ] English, Chinese
 
 #### TO-DOs:
 - [ ] App
@@ -68,32 +65,38 @@ Only update UI from the main thread. Do other work in the secondary thread
   - [ ] Add build phase with objc-codegenutils and generate class methods
 - [ ] LocalizedStrings
 - [ ] Use [chisel](https://github.com/facebook/chisel) for lldb debug
-
-
+- [ ] Queue
+  - [ ] Default Main Queue
+  - [ ] Default Background Queue
+  - [ ] Data Layer Queue
+- [ ] Mandatory update?
 - [ ] GCAppKit -
-  - [ ] GCUIKit
-    - [ ] GCUICategory (or name it like GCButton?)
+  - [ ] GCUIKit - Provide Factory Method/Class Method for creating UI component fast
+    - [ ] GCButton - [FlatUIKit](https://github.com/Grouper/FlatUIKit)
+    - [ ] GCGestureRecognizer
+    - [ ] GCShimmer
+    - [ ] GCColor - Use Class Method
+    - [ ] GCView
       - [ ] UIView+GCFoundation - [UIView-Shake](https://github.com/andreamazz/UIView-Shake),
+    - [ ] GCTextField
       - [ ] UITextField+GCFoundation - [UITextField-Shake](https://github.com/andreamazz/UITextField-Shake), [JVFloatLabeledTextField](https://github.com/jverdi/JVFloatLabeledTextField)
+    - [ ] GCAttributedString
       - [ ] NSAttributedString+GCFoundation
-    - [ ] GCCustomeUIFactory - Provide Factory Method/Class Method for creating UI component fast
-      - [ ] GCButton - [FlatUIKit](https://github.com/Grouper/FlatUIKit)
-      - [ ] GCGestureRecognizer
-      - [ ] GCShimmer
   - [ ] GCUtility
     - [ ] GCAccountManager
     - [ ] GCNetworkManager
-    - [x] GCConstant
-    - [ ] GCMacro
+    - [ ] GCSettingManager
+    - [ ] GCConstant - Prefix all constants
+    - [ ] GCMacro - Prefix all macro
+    - [ ] GCConfiguration - Prefix all config
     - [ ] GCPList
       - [Link01](http://stackoverflow.com/questions/21119922/how-to-read-a-plist-and-create-different-arrays-from-its-content-in-xcode), [Link02](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/ReadWritePlistData/ReadWritePlistData.html)
-    - [ ] GCConfiguration
     - [ ] GCBundle
     - [ ] GCAppCategory
       - [ ] GCLog - Pretty hex dump
     - [ ] GCFormatter - [FormatterKit](https://github.com/mattt/FormatterKit)
       - [ ] NSDate+GCFoundation
-      - [ ] GCDateFormatter
+      - [ ] GCDateFormatter - [DateTools](https://github.com/MatthewYork/DateTools)
       - [ ] GCTimeFormatter
     - [ ] GCComposer
     - [ ] GCFriendList
@@ -112,7 +115,7 @@ Only update UI from the main thread. Do other work in the secondary thread
 #### Architecture
 
 1. OAuth
-  - Choose [Json Web Token over Session](https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/) with [Bcrypt](dcodeIO/bcrypt.js) Encryption
+  - [ ] Choose [Json Web Token over Session](https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/) with [Bcrypt](dcodeIO/bcrypt.js) Encryption
 
 #### TO-DOs:
 
@@ -123,7 +126,7 @@ Only update UI from the main thread. Do other work in the secondary thread
   - [ ] Server - express
   - [ ] CORS - expressjs/cors
   - [ ] jwt - hokaccha/node-jwt-simple
-  - [ ] CSV parsing - PapaParse
+  - [ ] CSV to MySQL parsing - PapaParse
 - [ ] npm
   - [ ] Auto Refresh
     - [ ] nodemon for development
@@ -163,12 +166,24 @@ Only update UI from the main thread. Do other work in the secondary thread
       - and batch executes all updates
     - Might worries about the performance if only a small changes occurs in a huge DOM tree. There're a lot of useless diffs
 
+## Database
+#### MySQL vs MongoDB
+- Compare
+  - Chose MySQL because DBDCapital is more like a book keeping system
+  - Might use MongoDB for blog website
+
+#### TO-DOs:
+- [ ] Daily backup for the entire DB
+  - [ ] Backup after a successful update of DB. Use it to restore if something goes wrong next time
+
+
 ## Summarize Great Article from
-- [ ] Make them a feature of this project
+- [ ] Make them a feature of this project.
   - [ ] [VIPER modularity ](http://www.objc.io/issues/13-architecture/viper/) - Get great links in this article
   - [ ] 10 key points: https://www.airpair.com/node.js/posts/top-10-mistakes-node-developers-make
   - [ ] This too: https://medium.com/@faisalabid/7-tips-for-a-node-js-padawan-e7c0b0e5ce3c
   - [ ] https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/
+- [ ] Use the Image from the screen shot or the article to make README colorful
 
 ## To learn
 - Difference between JWT and OAuth2, OAuth1
