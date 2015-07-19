@@ -12,9 +12,7 @@ var User = dbMain.Model.extend({
 
 
     return new this({Email: email.toLowerCase().trim()}).fetch({require: true}).tap(function(user) {
-      return bcrypt.compareAsync(password, user.get('PasswordHash').toString('utf8')).then(function(value) {
-        console.log(value);
-      });
+      return bcrypt.compareAsync(password, user.get('PasswordHash').toString('utf8'));
     });
   }),
   register: Promise.method(function(email, password, lastname) {
@@ -54,11 +52,12 @@ User.login('yinanfang@gmail.com', '123456')
     console.log("login user: " + JSON.stringify(user));
     console.log("user Email: " + user.get('Email'));
 
-    user.then(function(value) {
-      console.log("main bcrypt: " + value);
-    });
+    // user.then(function(value) {
+    // });
 
     // res.json(user.omit('password'));
+  }).then(function(value){
+    console.log("main bcrypt: " + value);
   }).catch(User.NotFoundError, function() {
     console.log("NotFoundError user: " + user);
     // res.json(400, {error: email + ' not found'});
