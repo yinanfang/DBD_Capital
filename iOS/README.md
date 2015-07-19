@@ -18,33 +18,20 @@ Add Class prefix for existing files in main.m, AppDelegate. Click on the project
 Add GCAppKit to the Bundle directory
 Create other groups, corresponding folders in Bundle directory, and relate them in Xcode
 
+Add PrefixHeader.pch
+
 Delete default storyboard and viewController
 
 Enable XcodeColor: https://github.com/CocoaLumberjack/CocoaLumberjack/issues/50#issuecomment-34286656
 
 Project Settings
-1. Build Settings -> Implicit retain of 'self' within blocks
+1. Build Settings -> Implicit retain of 'self' within blocks -> Yes
 
 
 
-TODOs:
 
-Use Images.xcassets to avoid different naming suffix for image files
 
-LocalizedStrings
 
-Frameworks
-  Login screen
 
-Document folder structure
-GCAppKit
-  GCAppAPI
-  GCUtility
-  GCNetworking
-  GCBundle
-  GCLogDump
-  GCConstants
-  GCMacros
-  GCPList
-    http://stackoverflow.com/questions/21119922/how-to-read-a-plist-and-create-different-arrays-from-its-content-in-xcode
-    https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/ReadWritePlistData/ReadWritePlistData.html
+
+
