@@ -1,5 +1,12 @@
 
-
+#### To Think About
+- EC6 Generator
+  - Server - koa
+  browser - bluebird, tracer-compiler
+- Immutable State
+  - [immutable-js](http://facebook.github.io/immutable-js/) - Immutable persistent data collections for Javascript which increase efficiency and simplicity.
+- Type
+  - flow - Adds static typing to JavaScript to improve developer productivity and code quality. http://flowtype.org/
 
 
 Random Icon from
