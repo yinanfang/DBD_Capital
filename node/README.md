@@ -1,4 +1,23 @@
 
+#### To read
+- node inspector
+- nodemon -debug app.js
+- Angular
+  - johnpapa/angular-styleguide
+  - Angular UI: https://angular-ui.github.io/
+    - https://github.com/angular-ui/bootstrap
+    - Web code editor: https://github.com/angular-ui/ui-ace
+- Tutorial - https://egghead.io/
+- Danny's repo
+  - https://github.com/HackrLabs/hackrtrackr-api/tree/refactor/es6
+  - https://github.com/HackrLabs/hackrtrackr-web
+  - https://github.com/Swiip/generator-gulp-angular
+- Repo
+  - Airbnb
+    - UITableView for javascript: https://github.com/airbnb/infinity
+    - Multi language - https://github.com/airbnb/polyglot.js
+    - Style guide - https://github.com/airbnb/javascript
+
 #### To Think About
 - EC6 Generator
   - Server - koa
