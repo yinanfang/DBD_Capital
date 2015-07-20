@@ -8,6 +8,8 @@ var http = require('http');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var jwt = require('jwt-simple');
+var User = require('./app/api/db'),
+    bodyParser = require('body-parser')
 
 // var _ = require('underscore')._,
 
@@ -18,7 +20,7 @@ app.set('port', process.env.PORT || 8080);
 // app.set('view engine', 'ejs');
 // app.set('view options', { layout: false });
 app.use(express.logger());
-app.use(express.bodyParser());
+app.use(bodyParser.json());
 app.use(express.methodOverride());
 app.use(passport.initialize());
 app.use(app.router);
@@ -30,6 +32,7 @@ app.configure('development', function() {
 app.configure('production', function() {
     app.use(express.errorHandler());
 });
+app.post('/login', User.login)
 
 // var Account = require(__dirname +'/models/account');
 
