@@ -11,9 +11,7 @@ var bodyParser = require('body-parser');
 // Config
 var config = require(__dirname + '/config/config.js');
 // API v1.0
-var User = require('./api/v1.0/api.js');
-
-
+var API = require('./api/v1.0/api.js');
 
 var app = express();
 app.set('port', process.env.PORT || 8080);
@@ -35,7 +33,9 @@ app.configure('production', function() {
 });
 
 
-app.post('/login', User.login)
+app.post('/api/v1.0/login', API.login);
+
+app.post('/api/v1.0/register', API.register);
 
 
 
