@@ -1,7 +1,6 @@
 var dbMain = require('./bookshelf').Main;
 var checkit  = require('checkit');
 var Promise  = require('bluebird');
-var bcrypt   = require('bcryptjs');
 /*
 var User = dbMain.Model.extend({
   tableName: 'User',
@@ -41,6 +40,11 @@ var User = dbMain.Model.extend({
   tableName: 'User'
 })
 
+module.exports = {
+  User: User,
+};
+
+
 // console.log('register start....');
 // User.register('yinanfang@gmail.com', '123456', 'lastname')
 //   .then(function(result) {
@@ -69,34 +73,18 @@ User.login('yinanfang@gmail.com', 'qwerty')
   });
 */
 
-var login = function(req, res) {
-  var password = req.body.password
-  console.log('login called')
-  new User({Email: req.body.email.toLowerCase().trim()})
-    .fetch()
-    .then(function(user){
-      var isMatch = bcrypt.compareSync(password, user.get('PasswordHash').toString('utf8'));
-      console.log('is match: ', isMatch)
-      if(isMatch)
-        return res.send({sucess: true})
-      res.send({error: true, msg: 'User authentication failed'})
-    })
-}
 
 
-var user = {
-  login: login
-}
+
+// var user = {
+//   login: login
+// }
+// module.exports = user;
 
 // register
 // https://nodejs.org/api/buffer.html#buffer_buf_write_string_offset_length_encoding
 
 
-// var DataModel = {
-//   User: User,
-// }
-
-// module.exports = DataModel;
 
 
 
@@ -106,4 +94,3 @@ var user = {
 //   console.log(users.toJSON().FirstName);
 //   console.log(users.toJSON());
 // })
-module.exports = user;

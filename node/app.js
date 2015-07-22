@@ -1,6 +1,6 @@
 'strict'
 
-
+// Dependencies
 var path = require('path');
 var express = require('express');
 var http = require('http');
@@ -8,10 +8,10 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var jwt = require('jwt-simple');
 var bodyParser = require('body-parser');
-
+// Config
 var config = require(__dirname + '/config/config.js');
-
-var User = require('./api/v1.0/db/db.js');
+// API v1.0
+var User = require('./api/v1.0/api.js');
 
 
 
