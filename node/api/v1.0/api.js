@@ -12,12 +12,15 @@ var login = function(req, res) {
   new User({Email: req.body.email.toLowerCase().trim()})
     .fetch()
     .then(function(user){
-      var isMatch = bcrypt.compareSync(password, user.get('PasswordHash').toString('utf8'));
-      console.log('is match: ', isMatch)
-      if(isMatch)
-        return res.send({sucess: true})
-      res.send({error: true, msg: 'User authentication failed'})
-    })
+      bcrypt.compare(password, user.get('PasswordHash').toString('utf8'), function(err, isMatch) {
+        console.log('Login Result: ', isMatch);
+        if (isMatch) {
+          res.send({
+            status: 200,
+          });
+        };
+      });
+    });
 }
 
 var register = function(req, res) {
@@ -25,7 +28,7 @@ var register = function(req, res) {
   var password = req.body.password
   var message;
   console.log('Registering...')
-  new User({Email: req.body.email.toLowerCase().trim()})
+  new User({Email: email.toLowerCase().trim()})
     .fetch()
     .then(function(user){
       if (user) {
@@ -36,11 +39,15 @@ var register = function(req, res) {
           msg: message,
         });
       } else {
-        // TODO: Add to database
-        // TODO: Calculate jdenticon
-        res.send({
+        bcrypt.hash(password, 10, function(err, hash) {
+          res.send({
             status: 200,
           });
+        });
+
+        // TODO: Add to database
+        // TODO: Calculate jdenticon
+
       };
     })
 }
