@@ -6,7 +6,6 @@ var express = require('express');
 var http = require('http');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var jwt = require('jwt-simple');
 var bodyParser = require('body-parser');
 // Config
 var config = require(__dirname + '/config/config.js');
@@ -37,7 +36,17 @@ app.post('/api/v1.0/login', API.login);
 
 app.post('/api/v1.0/register', API.register);
 
-
+// app.error(function(err, req, res, next){
+//     if (err instanceof NotFound) {
+//         res.send({
+//           status: 404,
+//         });
+//     } else {
+//         res.send({
+//           status: 500,
+//         });
+//     }
+// });
 
 
 // var Account = require(__dirname +'/models/account');

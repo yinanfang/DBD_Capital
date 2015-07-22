@@ -1,29 +1,15 @@
 
 var bcrypt   = require('bcryptjs');
+var jwt = require('jwt-simple');
 
 var DataModel = require('./db/db');
+
+var JWTSecret = require('../../config/config.js').JWTSecret;
 
 
 var User = DataModel.User;
 
-var login = function(req, res) {
-  console.log('Logging In...')
-  var password = req.body.password
-  new User({Email: req.body.email.toLowerCase().trim()})
-    .fetch()
-    .then(function(user){
-      bcrypt.compare(password, user.get('PasswordHash').toString('utf8'), function(err, isMatch) {
-        console.log('Login Result: ', isMatch);
-        if (isMatch) {
-          res.send({
-            status: 200,
-          });
-        };
-      });
-    });
-}
-
-var register = function(req, res) {
+var register = function(req, res, next) {
   var email = req.body.email
   var password = req.body.password
   var message;
@@ -36,26 +22,62 @@ var register = function(req, res) {
         console.log(message);
         res.send({
           status: 406,
-          msg: message,
+          message: message,
         });
       } else {
         bcrypt.hash(password, 10, function(err, hash) {
-          res.send({
-            status: 200,
+          User.forge({
+            Email: email,
+            PasswordHash: hash,
+          })
+          .save()
+          .then(function() {
+            message = "Added new user to database!";
+            console.log(message);
+            res.send({
+              status: 200,
+              message: message,
+            });
           });
         });
 
-        // TODO: Add to database
         // TODO: Calculate jdenticon
 
-      };
+      }
     })
-}
+};
+
+var login = function(req, res, next) {
+  console.log('Logging In...')
+  var email = req.body.email;
+  var password = req.body.password;
+  new User({Email: email.toLowerCase().trim()})
+    .fetch()
+    .then(function(user){
+      bcrypt.compare(password, user.get('PasswordHash').toString('utf8'), function(err, isMatch) {
+        if (err) { return next(err) };
+        console.log('Login Result: ', isMatch);
+        if (!isMatch) {
+          return res.send({
+            status: 401,
+          });
+        }
+        var token = jwt.encode({
+          email: email,
+        }, JWTSecret);
+        res.send({
+          token: token,
+        });
+      });
+    });
+};
+
+
 
 module.exports = {
   login: login,
   register: register,
-}
+};
 
 
 
