@@ -1,20 +1,18 @@
 
 var bcrypt   = require('bcryptjs');
-var jwt = require('jwt-simple');
 
 var DataModel = require('./db/db');
+var Auth = require('./auth.js');
 
-var JWTSecret = require('../../config/config.js').JWTSecret;
 
-
-var User = DataModel.User;
+var GCUser = DataModel.User;
 
 var register = function(req, res, next) {
   var email = req.body.email
   var password = req.body.password
   var message;
   console.log('Registering...')
-  new User({Email: email.toLowerCase().trim()})
+  new GCUser({Email: email.toLowerCase().trim()})
     .fetch()
     .then(function(user){
       if (user) {
@@ -26,7 +24,7 @@ var register = function(req, res, next) {
         });
       } else {
         bcrypt.hash(password, 10, function(err, hash) {
-          User.forge({
+          GCUser.forge({
             Email: email,
             PasswordHash: hash,
           })
@@ -51,7 +49,7 @@ var login = function(req, res, next) {
   console.log('Logging In...')
   var email = req.body.email;
   var password = req.body.password;
-  new User({Email: email.toLowerCase().trim()})
+  new GCUser({Email: email.toLowerCase().trim()})
     .fetch()
     .then(function(user){
       bcrypt.compare(password, user.get('PasswordHash').toString('utf8'), function(err, isMatch) {
@@ -62,21 +60,42 @@ var login = function(req, res, next) {
             status: 401,
           });
         }
-        var token = jwt.encode({
-          email: email,
-        }, JWTSecret);
+        var token = Auth.getJWTToken(email);
         res.send({
+          status: 200,
           token: token,
         });
       });
     });
 };
 
+var user = function(req, res, next) {
+  console.log('user method');
+  // console.log(req);
+  if (!req.jwtToken) {
+    console.log('no auth');
+    return res.send({
+      status: 401,
+    })
+  };
+  GCUser.forge({
+    Email: req.jwtToken.email
+  })
+    .fetch()
+    .then(function(user) {
+      user.unset("PasswordHash");
+      res.send({
+        status: 200,
+        user: user,
+      });
+    });
+};
 
 
 module.exports = {
   login: login,
   register: register,
+  user: user,
 };
 
 
@@ -84,7 +103,7 @@ module.exports = {
 
 
 // console.log('register start....');
-// User.register('yinanfang@gmail.com', '123456', 'lastname')
+// GCUser.register('yinanfang@gmail.com', '123456', 'lastname')
 //   .then(function(result) {
 //     console.log("register result");
 //     console.log(result);
@@ -94,7 +113,7 @@ module.exports = {
 //   });
 /*
 console.log('login start....');
-User.login('yinanfang@gmail.com', 'qwerty')
+GCUser.login('yinanfang@gmail.com', 'qwerty')
   .then(function(user) {
     console.log("login user: " + JSON.stringify(user));
     console.log("user Email: " + user.get('Email'));
@@ -103,7 +122,7 @@ User.login('yinanfang@gmail.com', 'qwerty')
     // });
 
     // res.json(user.omit('password'));
-  }).catch(User.NotFoundError, function() {
+  }).catch(GCUser.NotFoundError, function() {
     console.log("NotFoundError user: " + user);
     // res.json(400, {error: email + ' not found'});
   }).catch(function(err) {
@@ -127,7 +146,7 @@ User.login('yinanfang@gmail.com', 'qwerty')
 
 
 // Retrieve All users
-// new User().fetch().then(function (users) {
+// new GCUser().fetch().then(function (users) {
 //   console.log(Object.prototype.toString.call(users));
 //   console.log(users.toJSON().FirstName);
 //   console.log(users.toJSON());

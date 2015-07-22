@@ -7,10 +7,12 @@ var http = require('http');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var bodyParser = require('body-parser');
+
 // Config
 var config = require(__dirname + '/config/config.js');
 // API v1.0
 var API = require('./api/v1.0/api.js');
+var Auth = require('./api/v1.0/auth.js');
 
 var app = express();
 app.set('port', process.env.PORT || 8080);
@@ -19,10 +21,12 @@ app.set('port', process.env.PORT || 8080);
 // app.set('view options', { layout: false });
 app.use(express.logger());
 app.use(bodyParser.json());
-app.use(express.methodOverride());
-app.use(passport.initialize());
-app.use(app.router);
+app.use(Auth.getJWTContent);
+// app.use(express.methodOverride());
+// app.use(passport.initialize());
+// app.use(app.router);
 // app.use(express.static(path.join(__dirname, 'public')));
+
 
 app.configure('development', function() {
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
@@ -35,6 +39,8 @@ app.configure('production', function() {
 app.post('/api/v1.0/login', API.login);
 
 app.post('/api/v1.0/register', API.register);
+
+app.post('/api/v1.0/user', API.user);
 
 // app.error(function(err, req, res, next){
 //     if (err instanceof NotFound) {
