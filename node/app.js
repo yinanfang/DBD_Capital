@@ -1,6 +1,5 @@
 'strict'
 
-var config = require(__dirname + '/config/config.js');
 
 var path = require('path');
 var express = require('express');
@@ -8,10 +7,12 @@ var http = require('http');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var jwt = require('jwt-simple');
-var User = require('./app/api/db'),
-    bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 
-// var _ = require('underscore')._,
+var config = require(__dirname + '/config/config.js');
+
+var User = require('./api/v1.0/db/db.js');
+
 
 
 var app = express();
@@ -32,7 +33,12 @@ app.configure('development', function() {
 app.configure('production', function() {
     app.use(express.errorHandler());
 });
+
+
 app.post('/login', User.login)
+
+
+
 
 // var Account = require(__dirname +'/models/account');
 
