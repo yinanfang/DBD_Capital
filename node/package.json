@@ -82,6 +82,7 @@
     "pm2": "^0.14.3",
     "sequelize": "^3.3.2",
     "should": "^2.1.0",
+    "svg2png": "^1.1.1",
     "underscore": "^1.5.2",
     "winston": "^1.0.1"
   }
