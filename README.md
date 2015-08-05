@@ -53,8 +53,17 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 #### Architecture Decision
 - [VIPER](http://www.objc.io/issues/13-architecture/viper/)
   - After Comparing the [difference](http://khanlou.com/2014/03/model-view-whatever/) between MVC, MVVM, and VIPER, I chose to use VIPER because of its scalability.
+  - Retain problem: https://github.com/mutualmobile/VIPER-TODO/issues/2
 
 #### TO-DOs:
+- [ ] Explicitly Sign the Code in the Build Settings!!!
+- Code Style
+  - https://github.com/NYTimes/objective-c-style-guide
+  - https://github.com/futurice/ios-good-practices
+    - Description about Certificate and Provisioning Files:
+      - https://github.com/futurice/ios-good-practices#signing
+      - http://escoz.com/blog/demystifying-ios-certificates-and-provisioning-files/
+      - Certificate needs to be downloaded manually from Developer Center. Provisioning file can be auto downloaded in the Xcode. Just go to the account and click details. And click on the Refresh button on the lower left.
 - [ ] App
   - [ ] Welcome, Login, Register, Visitor - UIView-Shake
   - [ ] Show list of accounts
@@ -98,6 +107,7 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
       - [ ] NSDate+GCFoundation
       - [ ] GCDateFormatter - [DateTools](https://github.com/MatthewYork/DateTools)
       - [ ] GCTimeFormatter
+      - [ ] GCDataDetector - http://nshipster.com/nsdatadetector/
     - [ ] GCComposer
     - [ ] GCFriendList
     - [ ] GCShare
@@ -144,6 +154,7 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 - [ ] Blog Website
   - [ ] AngularJS
   - [ ] ejs
+- [x] [Airbnb Javascript Syntax](https://github.com/airbnb/javascript)
 
 #### Website Architecture
 - [ ] Folder structure follow "polymer-starter-kit".
