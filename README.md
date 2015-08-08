@@ -15,7 +15,7 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 ## Quick Installation
 
     git clone https://github.com/yinanfang/GoldenCompass; cd GoldenCompass
-    cd node; npm install -g gulp bower && npm install && bower install; cd ..
+    cd node; sudo npm install -g gulp bower && npm install && bower install; cd ..
     cd iOS; cocoapod install; cd ..
 
     Create $HOME/node/config/config.js and fill in info like $HOME/Others/configTemplate.js
