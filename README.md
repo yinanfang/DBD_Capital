@@ -2,6 +2,9 @@
 
 An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 
+## About
+This is was originally a full stack project for my personal blog site. However, I added DBD Capital as a subtask into this project because my parents are "in need of" a reporting system for pushing status of the stock accounts that they are trading for their clients. This is basically a fancy iPad version of Excel with a login system. The system is well sucured because the iOS app has only read ability and authentication is secured by JSON Web Token(JWT). I am trying to apply all the skills that I have ever learned in this project. Also, I'm building a highly re-usable iOS [libraries](https://github.com/yinanfang/GoldenCompass#to-dos) that I can easily use for future project.
+
 ## Progress
 - [ ] iOS app
 - [ ] Node backend
@@ -95,9 +98,9 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
     - [ ] GCAccountManager
     - [ ] GCNetworkManager
     - [ ] GCSettingManager
-    - [ ] GCConstant - Prefix all constants
-    - [ ] GCMacro - Prefix all macro
-    - [ ] GCConfiguration - Prefix all config
+    - [X] GCConstant - Prefix all constants
+    - [X] GCMacro - Prefix all macro
+    - [X] GCConfiguration - Prefix all config
     - [ ] GCPList
       - [Link01](http://stackoverflow.com/questions/21119922/how-to-read-a-plist-and-create-different-arrays-from-its-content-in-xcode), [Link02](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/ReadWritePlistData/ReadWritePlistData.html)
     - [ ] GCBundle
@@ -124,24 +127,24 @@ An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 
 #### Architecture
 
-1. OAuth
-  - [ ] Choose [Json Web Token over Session](https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/) with [Bcrypt](dcodeIO/bcrypt.js) Encryption
+1. Authentication
+  - [x] Choose [Json Web Token over Session](https://auth0.com/blog/2014/01/27/ten-things-you-should-know-about-tokens-and-cookies/) with [Bcrypt](dcodeIO/bcrypt.js) Encryption
 
 #### TO-DOs:
 
-- [ ] User Icon
-  - [ ] Random Icon from selected Image
-  - [ ] [Identicon](https://github.com/dmester/jdenticon)
+- [x] User Icon
+  - [x] Random Icon from selected Image
+  - [x] [Identicon](https://github.com/dmester/jdenticon)
 - [ ] WebAPI
-  - [ ] Server - express
+  - [x] Server - express
   - [ ] CORS - expressjs/cors
-  - [ ] jwt - hokaccha/node-jwt-simple
+  - [x] jwt - hokaccha/node-jwt-simple
   - [ ] CSV to MySQL parsing - PapaParse
 - [ ] npm
-  - [ ] Auto Refresh
-    - [ ] nodemon for development
+  - [x] Auto Refresh
+    - [x] nodemon for development
     - [ ] pm2 for production. Monitor and profile for production
-  - [ ] Promise - Async
+  - [x] Promise - Async
   - [ ] Build System - Gulp
   - [ ] Advanced logging - Bunyan
   - [ ] Advanced debug
