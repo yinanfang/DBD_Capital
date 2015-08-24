@@ -1,15 +1,22 @@
+'use strict';
+
 var config = require(__dirname + './../../../config/config.js');
 
-var knex = require('knex')({
-  client: 'mysql',
+var knex;
+if (config.isProduction) {
+  knex = require('knex')({
+  client: config.Production.DB.Type,
   connection: {
-    host     : config.WebfactionDB.host,
-    user     : config.WebfactionDB.user,
-    password : config.WebfactionDB.password,
-    database : config.WebfactionDB.database,
-    charset  : 'utf8'
+    host     : config.Production.DB.Host,
+    database : config.Production.DB.Name,
+    user     : config.Production.DB.User,
+    password : config.Production.DB.Password,
+    charset  : config.Production.DB.Charset,
   }
 });
+};
+
+
 
 module.exports.Main = require('bookshelf')(knex);
 
