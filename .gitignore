@@ -9,3 +9,5 @@
 
 ################################# Github Node.gitignore
 config.js
+node_modules/
+
