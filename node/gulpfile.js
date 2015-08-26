@@ -1,10 +1,24 @@
 'use strict';
 
-// Source: https://github.com/sogko/gulp-recipes/blob/master/browser-sync-nodemon-expressjs/gulpfile.js
+// Sources:
+// https://github.com/sogko/gulp-recipes/blob/master/browser-sync-nodemon-expressjs/gulpfile.js
+// http://jbavari.github.io/blog/2014/06/11/unit-testing-angularjs-services/
 
 var gulp = require('gulp');
+
 var browserSync = require('browser-sync');
+var del = require('del');
+var karmaServer = require('karma').Server;
 var nodemon = require('gulp-nodemon');
+var opn = require('opn');
+var runSequence = require('run-sequence');
+
+// Clean Output Directory
+gulp.task('clean', function (cb) {
+  del([
+    'tmp/*',
+  ], cb);
+});
 
 // we'd need a slight delay to reload browsers
 // connected to browser-sync after restarting nodemon
@@ -18,12 +32,15 @@ gulp.task('nodemon', function (cb) {
     script: 'app.js',
 
     // watch core server file(s) that require server restart on change
-    watch: ['app.js']
+    watch: ['**/*']
   })
     .on('start', function onStart() {
       // ensure start only got called once
       if (!called) { cb(); }
       called = true;
+
+      // Run tests
+      karmaSingleRun();
     })
     .on('restart', function onRestart() {
       // reload connected browsers after a slight delay
@@ -32,6 +49,9 @@ gulp.task('nodemon', function (cb) {
           stream: false   //
         });
       }, BROWSER_SYNC_RELOAD_DELAY);
+
+      // Run tests
+      karmaSingleRun();
     });
 });
 
@@ -51,13 +71,45 @@ gulp.task('browser-sync', ['nodemon'], function () {
     port: 4000,
 
     // open the proxied app in chrome
-    browser: ['google chrome'],
+    // browser: ['google chrome'],
+
+    // Decide which URL to open automatically when Browsersync starts.
+    // Defaults: "local" if none set.
+    // Options: true, local, external, ui, ui-external, tunnel or false
+    open: false,
 
     // Sync viewports to TOP position
-    scrollProportionally: false
+    // scrollProportionally: false
   });
+
+  // Open a specific url in browser
+  // opn('https://www.google.com',{app: ['google chrome']});
+  // opn('http://localhost:4000',{app: ['google chrome']});
 });
 
+var karmaSingleRun = function() {
+  gulp.start('karmaSingleRun');
+};
 
-gulp.task('default', ['browser-sync']);
+// No need to Karma plugin: https://github.com/karma-runner/gulp-karma
+gulp.task('karmaSingleRun', function (done) {
+  new karmaServer({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done).start();
+});
 
+gulp.task('test', ['karmaSingleRun']);
+
+gulp.task('default', ['clean'], function (cb) {
+  runSequence(
+    ['browser-sync'],
+    cb);
+});
+
+// gulp.task('dist', ['clean'], function (cb) {
+//   runSequence(
+//     ['browser-sync'],
+//     ['karmaSingleRun'],
+//     cb);
+// });
