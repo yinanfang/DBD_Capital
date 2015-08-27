@@ -1,5 +1,7 @@
 ![Golden Compass: An Elegant Full-Stack Project](https://raw.githubusercontent.com/yinanfang/GoldenCompass/master/Others/images/logo_github.png)
 
+[![Build Status](https://travis-ci.org/yinanfang/GoldenCompass.png?branch=master)](https://travis-ci.org/yinanfang/GoldenCompass)
+
 An elegant full-stack project with Node.js backend, HTML5 website and iOS app
 
 ## About
